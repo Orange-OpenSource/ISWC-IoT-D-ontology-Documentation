@@ -48,4 +48,4 @@ Copyright (c) 2022 Orange
 widoco - jar file
 
 ## Contact
- * e-mail: amal.guittoum@orange.com _{or any other mean (bug tracker, forum etc.) to contact support}_
+ * e-mail: amal.guittoum@orange.com
