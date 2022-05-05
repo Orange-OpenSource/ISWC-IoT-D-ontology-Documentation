@@ -7,7 +7,7 @@ For deployement Follow the next steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://gitlab.tech.orange/device-management-a-r/recherche/these/these_collaborative_iot_dm/iot-d-ontology-documentation.git
+   git clone https://github.com/Orange-OpenSource/ISWC-IoT-D-ontology-Documentation.git
    ```
 
 2. Normally the latest built version of the Widoco documentation is already available within the repository in the [`public`](https://gitlab.tech.orange/device-management-a-r/recherche/these/these_collaborative_iot_dm/iot-d-ontology-documentation/tree/main/public) folder. If you want to deploy this version then skip to step 4, otherwise proceed to delete all the files and folders in `public/`:
