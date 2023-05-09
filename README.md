@@ -1,6 +1,6 @@
 # IoT-D ontology
 Vocabulary definition for IoT dependencies toward collaborative device management. The vocabulary documentation is built using the [Widoco](https://github.com/dgarijo/Widoco) toolset, forked from [era-vocabulary](https://github.com/julianrojas87/era-vocabulary).
-![alt text](https://github.com/Orange-OpenSource/ISWC-IoT-D-ontology-Documentation/blob/master/iot.png=250x250)
+![alt text](https://github.com/Orange-OpenSource/ISWC-IoT-D-ontology-Documentation/blob/master/iot.png?raw=true)
 
 
 For deployement Follow the next steps:
