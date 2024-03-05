@@ -2,11 +2,11 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "de", "en", "undefined" ],
-    "baseIris" : [ "https://saref.etsi.org/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD", "http://www.w3.org/2001/XMLSchema", "http://elite.polito.it/ontologies/eupont.owl", "http://www.data-knowledge.org/dk" ],
+    "baseIris" : [ "https://saref.etsi.org/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://www.w3.org/2019/wot/td", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD", "http://www.w3.org/2001/XMLSchema", "http://elite.polito.it/ontologies/eupont.owl", "http://www.data-knowledge.org/dk" ],
     "title" : {
       "undefined" : "IoT dependencies ontology"
     },
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "version" : "0.0.4",
     "description" : {
       "undefined" : "IoT-D reprensents IoT systems context data that allows inference of dependencies between IoT systems."
@@ -15,19 +15,19 @@
       "versionIRI" : [ {
         "identifier" : "versionIRI",
         "language" : "undefined",
-        "value" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD/0.0.4",
+        "value" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD/0.0.4",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.0.4",
-        "type" : "label"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
         "type" : "label"
       } ],
       "title" : [ {
@@ -40,161 +40,142 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "5",
-    "type" : "owl:equivalentClass"
+    "id" : "0",
+    "type" : "owl:Class"
   }, {
-    "id" : "10",
-    "type" : "owl:equivalentClass"
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
   }, {
     "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "9",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "41",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "33",
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "2",
+    "id" : "46",
     "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "49",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "59",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:equivalentClass"
   }, {
     "id" : "53",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "79",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "45",
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "67",
+    "id" : "35",
     "type" : "rdfs:Literal"
   }, {
     "id" : "68",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "69",
+    "id" : "74",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "58",
+    "id" : "88",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "56",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
+    "id" : "37",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "91",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "66",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "34",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "10",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "95",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "19",
     "type" : "owl:equivalentClass"
   }, {
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "72",
     "type" : "owl:equivalentClass"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "28",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "18",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "66",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "61",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "12",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "7",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "1",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "4",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "30",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "82",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "14",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "26",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Property",
-    "equivalent" : [ "9" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Property"
-    },
-    "comment" : {
-      "undefined" : "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature"
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "5"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Actuator",
-    "equivalent" : [ "14" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Actuator"
-    },
-    "subClasses" : [ "13" ],
-    "attributes" : [ "equivalent" ],
-    "id" : "10",
-    "superClasses" : [ "11", "12" ]
-  }, {
     "iri" : "http://www.data-knowledge.org/dk/DataFlow",
     "baseIri" : "http://www.data-knowledge.org/dk",
     "instances" : 0,
@@ -202,46 +183,33 @@
       "IRI-based" : "DataFlow",
       "en" : "Data Flow"
     },
-    "subClasses" : [ "16" ],
+    "subClasses" : [ "1" ],
     "comment" : {
       "en" : "Indicates the actual connection and data exchange between particular applications"
     },
     "attributes" : [ "external" ],
-    "id" : "15"
+    "id" : "0"
   }, {
-    "iri" : "https://saref.etsi.org/core/Property",
-    "baseIri" : "https://saref.etsi.org/core",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Switch",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Property"
+      "IRI-based" : "Switch"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "9"
+    "id" : "23",
+    "superClasses" : [ "18" ]
   }, {
-    "iri" : "http://elite.polito.it/ontologies/eupont.owl#Action",
-    "baseIri" : "http://elite.polito.it/ontologies/eupont.owl",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ComplexTrigger",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Action"
+      "IRI-based" : "ComplexTrigger"
     },
-    "subClasses" : [ "2" ],
-    "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "39",
+    "superClasses" : [ "40" ]
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#triggerActionPlateform",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "triggerActionPlateform"
-    },
-    "comment" : {
-      "undefined" : "a kind of IoT application that is composed of rules created by end user."
-    },
-    "id" : "22",
-    "superClasses" : [ "23" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Broker",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Broker",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Broker"
@@ -249,153 +217,42 @@
     "comment" : {
       "undefined" : "broker that connect equipments."
     },
-    "id" : "24",
-    "superClasses" : [ "23" ]
+    "id" : "15",
+    "superClasses" : [ "16" ]
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Smokesensor",
-    "equivalent" : [ "26" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Smokesensor"
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "25",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#IoTDevice",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IoTDevice"
-    },
-    "subClasses" : [ "10", "4" ],
-    "comment" : {
-      "undefined" : "A device that is connected to the internet to share data it can be ether a sensor/actuator/processor or compositition."
-    },
-    "id" : "11",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "http://elite.polito.it/ontologies/eupont.owl#Rule",
-    "baseIri" : "http://elite.polito.it/ontologies/eupont.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Rule"
-    },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ConnectivityDevice",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ConnectivityDevice"
-    },
-    "comment" : {
-      "undefined" : "A device that connectes home devices to the internet like: gateway, wifiRepeater, hub."
-    },
-    "id" : "41",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "https://saref.etsi.org/core/Service",
-    "baseIri" : "https://saref.etsi.org/core",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Service",
+    "equivalent" : [ "53" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Service"
     },
-    "subClasses" : [ "53" ],
-    "attributes" : [ "equivalent", "external" ],
+    "attributes" : [ "equivalent" ],
     "id" : "8"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Temperaturesensor",
-    "equivalent" : [ "61" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Processor",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Temperaturesensor"
+      "IRI-based" : "Processor"
     },
+    "comment" : {
+      "undefined" : "A device that has the capability to perform computation operations on data."
+    },
+    "id" : "30",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Actuator",
+    "equivalent" : [ "59" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actuator"
+    },
+    "subClasses" : [ "23" ],
     "attributes" : [ "equivalent" ],
-    "id" : "33",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Action"
-    },
-    "comment" : {
-      "undefined" : "An action to perform by calling a service of an IoT device."
-    },
-    "id" : "2",
-    "superClasses" : [ "21" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ConnectivityService",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ConnectivityService"
-    },
-    "comment" : {
-      "undefined" : "A service offred by a connectivityDevice."
-    },
-    "id" : "53",
-    "superClasses" : [ "8" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Trigger"
-    },
-    "subClasses" : [ "51" ],
-    "comment" : {
-      "undefined" : "An event to react to. It is launched when the state of an IoT device changes."
-    },
-    "id" : "20",
-    "superClasses" : [ "56" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "64",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "45",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "67",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "68",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "69",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "58",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "id" : "18",
+    "superClasses" : [ "19", "32" ]
   }, {
     "iri" : "http://elite.polito.it/ontologies/eupont.owl#Trigger",
     "baseIri" : "http://elite.polito.it/ontologies/eupont.owl",
@@ -403,21 +260,736 @@
     "label" : {
       "IRI-based" : "Trigger"
     },
-    "subClasses" : [ "20" ],
+    "subClasses" : [ "40" ],
     "attributes" : [ "external" ],
-    "id" : "56"
+    "id" : "46"
   }, {
-    "iri" : "https://saref.etsi.org/core/FeatureOfInterest",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightToilet",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_lightToilet"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bathroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_bathroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightEntrance",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_lightEntrance"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightOffice",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_lightOffice"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_alarm",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_alarm"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_AC_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightStraicase",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_lightStraicase"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_office",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_AC_office"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightWalkway",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_lightWalkway"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_AC_livingroom"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An action to perform by calling a service of an IoT device."
+    },
+    "id" : "3",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#PropertyOfInterest",
+    "equivalent" : [ "60" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyOfInterest"
+    },
+    "comment" : {
+      "undefined" : "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Temperaturesensor",
+    "equivalent" : [ "66" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temperaturesensor"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "49",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ConnectivityDevice",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConnectivityDevice"
+    },
+    "comment" : {
+      "undefined" : "A device that connectes home devices to the internet like: gateway, wifiRepeater, hub."
+    },
+    "id" : "28",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Smokesensor",
+    "equivalent" : [ "72" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Smokesensor"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "44",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://saref.etsi.org/core/Actuator",
     "baseIri" : "https://saref.etsi.org/core",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "FeatureOfInterest"
+      "IRI-based" : "Actuator"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "75"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "59"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#DataFlow",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trigger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeDetected",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_smokeDetected"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeDetected",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_smokeDetected"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window_open",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_window_open"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_office",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_office"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeDetected",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_smokeDetected"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_window_open",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_window_open"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window_open",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_window_open"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_walkway",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_walkway"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_staircase",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_staircase"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeDetected",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_smokeDetected"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_entrance",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_entrance"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bathroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "presence_bathroom"
+      }
+    } ],
+    "subClasses" : [ "39" ],
+    "comment" : {
+      "undefined" : "An event to react to. It is launched when the state of an IoT device changes."
+    },
+    "id" : "40",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://saref.etsi.org/core/PropertyOfInterest",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Per convention, the IRI of properties of interest should consist of the IRI of their feature of interest, suffixed with a fragment identifier #{P} where {P} refers to the name of the property.",
+        "type" : "label"
+      }, {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A property of interest is the property of (OP saref:isPropertyOfInterestOf) exactly one feature of interest.",
+        "type" : "label"
+      }, {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Properties of interest need not always be explicited. It depends on the use case. Typically, properties of interest are useful in applications, where the association between a feature of interest and a property (i.e., the property of interest) needs to be identified and related to other properties of interest.",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "en",
+        "value" : "V3.2.1: Introduced saref:PropertyOfInterest to solved the ambiguity between generic vs specific properties.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The air temperature of the atmosphere sample at a certain location and altitude, the received signal strength indicator of an wireless IoT connection, the luminance of the ETSI ATHENA amphitheatre.\n\n<etsi_premises/athena#luminance> a saref:PropertyOfInterest ;\n    saref:isPropertyOfInterestOf <etsi_premises/athena> ;\n    saref:hasPropertyKind saref:Luminance ;\n    rdfs:comment \"The luminance of amphitheatre ATHENA\"@en .\n",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PropertyOfInterest",
+      "en" : "Property of Interest"
+    },
+    "comment" : {
+      "en" : "Identifiable qualities of features of interest that can be acted upon by devices, such as observed or controlled. An instance of saref:PropertyOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://elite.polito.it/ontologies/eupont.owl#Action",
+    "baseIri" : "http://elite.polito.it/ontologies/eupont.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://www.w3.org/2019/wot/td#PropertyAffordance",
+    "baseIri" : "https://www.w3.org/2019/wot/td",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyAffordance"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://elite.polito.it/ontologies/eupont.owl#Rule",
+    "baseIri" : "http://elite.polito.it/ontologies/eupont.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rule"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_11",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_11"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_12",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_12"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_5",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_5"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_03",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_03"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_4",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_4"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_7",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_7"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_6",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_6"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_9",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_9"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_10",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_10"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_8",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "rule_8"
+      }
+    } ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://saref.etsi.org/core/Service",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_office",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_office"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light1_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter_office",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter_office"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_on",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_AC_on"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_off",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_AC_off"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light2_kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter5_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter5_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_off",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_alarm_off"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light1_kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light2_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bathroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light2_bathroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bathroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light2_bathroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter3_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter3_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light2_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter1_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter_office",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter_office"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter4_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter4_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_off",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_AC_off"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bathroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light1_bathroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_staircase",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_staircase"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light3_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light3_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_toilet",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light_toilet"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_staircase",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light_staircase"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light1_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light2_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_on",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_AC_on"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter1_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_toilet",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_toilet"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_on",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_alarm_on"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_off",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_AC_off"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_walkway",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_walkway"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light1_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter2_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_walkway",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light_walkway"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter5_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter5_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light1_kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter1_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter2_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bathroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light1_bathroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light3_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light3_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light2_kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_entrance",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light_entrance"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light1_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter4_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter4_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_on",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_AC_on"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter2_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light4_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light4_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_office",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light_office"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "off_light2_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light4_bedroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "on_light4_bedroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter3_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter3_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "close_shutter1_livingroom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "open_shutter2_livingroom"
+      }
+    } ],
+    "subClasses" : [ "52" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#DataFlow",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DataFlow",
@@ -426,8 +998,822 @@
     "comment" : {
       "undefined" : "Indicates the actual connection and data exchange between actions in one application."
     },
-    "id" : "16",
-    "superClasses" : [ "15" ]
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ConnectivityService",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConnectivityService"
+    },
+    "comment" : {
+      "undefined" : "A service offred by a connectivityDevice."
+    },
+    "id" : "52",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IoTDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_coldwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "toilet_coldwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_switch1_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_AC"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeSensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_smokeSensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_switch_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_closet_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_closet_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_switch_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "staircase_switch_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_table",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_presence_table"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_light2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_light2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_light",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_light"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_switch_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "staircase_switch_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_light1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_light1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_switch_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_switch_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "staircase_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_fridge_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_fridge_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_light1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_light1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_oven",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_oven"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_window1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter3_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch1_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "toilet_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_shutter1_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_shutter2_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_middle",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_switch_middle"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_bottom_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch1_bottom_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_sink_hotwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_sink_hotwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_light2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_light2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_bottom_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_switch_bottom_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_switch_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "toilet_switch_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_light1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_light1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_bottom_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_switch_bottom_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_shutter"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch2_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_switch2_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter2_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_tv",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_tv"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_switch_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cooktop",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_cooktop"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_switch_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_switch_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeSensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_smokeSensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_switch_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_hotwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_shower_hotwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_sink_coldwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_sink_coldwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeSensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_smokeSensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_bottom_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_switch1_bottom_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_alarm"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_cupboard2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_light",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_light"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeSensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_smokeSensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard3",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_cupboard3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_AC"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard4",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_cupboard4"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard5",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_cupboard5"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_switch_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_bottom_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_switch_bottom_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch2_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_switch_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_light1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_tv",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_tv"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch2_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_drawer1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_drawer1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_drawer2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_drawer2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_shutter2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_switch_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_hood",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_hood"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_shutter1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_switch_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "toilet_switch_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_bottom_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch2_bottom_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter1_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_bottom_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch1_bottom_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light4",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_light4"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_bottom_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_switch_bottom_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_shutter_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_light2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light3",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_light3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter5_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_AC"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_switch1_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter4"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter3"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_sensor",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter4_sensor"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_bed_pressure",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_bed_pressure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_shutter5"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_bottom_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_switch_bottom_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_couch",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_presence_couch"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch2_top_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_switch2_top_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_light",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "toilet_light"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "office_window"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_sink_coldwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_sink_coldwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_middle_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_switch_middle_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_sink_hotwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_sink_hotwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_light2",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_light2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_light1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_light1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_bottom_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_switch_bottom_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard1",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen_cupboard1"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_bottom_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_switch1_bottom_left"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_shower_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_bottom_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch2_bottom_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_coldwater_instantaneous",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_shower_coldwater_instantaneous"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom_presence"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_top_right",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "walkway_switch1_top_right"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_door",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bathroom_door"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_light",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "staircase_light"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_middle_left",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "bedroom_switch_middle_left"
+      }
+    } ],
+    "subClasses" : [ "10", "18" ],
+    "comment" : {
+      "undefined" : "A device that is connected to the internet to share data it can be ether a sensor/actuator/processor or compositition."
+    },
+    "id" : "32",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "34", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://saref.etsi.org/core/FeatureOfInterest",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "Feature of interest"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "toilet"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "kitchen"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "staircase"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "entrance"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "livingroom"
+      }
+    } ],
+    "comment" : {
+      "en" : "A feature of interest represents any real world entity from which a property or a state may be acted upon, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity."
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "37"
   }, {
     "iri" : "https://saref.etsi.org/core/Sensor",
     "baseIri" : "https://saref.etsi.org/core",
@@ -435,40 +1821,23 @@
     "label" : {
       "IRI-based" : "Sensor"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "78"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "91"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#triggerActionPlateform",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Application"
+      "IRI-based" : "triggerActionPlateform"
     },
-    "subClasses" : [ "24", "22" ],
     "comment" : {
-      "undefined" : "An IoT application that compose IoT devices services to create added value/complex services, it can be a trigger-action plateform."
+      "undefined" : "a kind of IoT application that is composed of rules created by end user."
     },
-    "id" : "23"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Service",
-    "equivalent" : [ "8" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Service"
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "28"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "18",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "25",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "66",
+    "id" : "77",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -480,23 +1849,8 @@
     "label" : {
       "IRI-based" : "TemperatureSensor"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "61"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device",
-    "equivalent" : [ "7" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Device",
-      "undefined" : "Device"
-    },
-    "subClasses" : [ "11", "10", "37", "4", "41" ],
-    "comment" : {
-      "undefined" : "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "12"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "66"
   }, {
     "iri" : "https://saref.etsi.org/core/Device",
     "baseIri" : "https://saref.etsi.org/core",
@@ -504,80 +1858,122 @@
     "label" : {
       "IRI-based" : "Device"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "7"
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "34"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Switch",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Switch"
-    },
-    "id" : "13",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "https://saref.etsi.org/core/State",
+    "iri" : "https://saref.etsi.org/core/StateOfInterest",
     "baseIri" : "https://saref.etsi.org/core",
     "instances" : 0,
-    "label" : {
-      "IRI-based" : "State"
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "Per convention, the IRI of states of interest should consist of the IRI of their feature of interest, suffixed with a fragment identifier #{S} where {S} refers to the name of the state.",
+        "type" : "label"
+      }, {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A state of interest is the state of (OP saref:isStateOfInterestOf) exactly one feature of interest.",
+        "type" : "label"
+      }, {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "States of interest need not always be explicited. It depends on the use case. Typically, states of interest are useful in applications, where the association between a feature of interest and a state (i.e., the state of interest) needs to be identified and related to other states of interest.",
+        "type" : "label"
+      } ],
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "en",
+        "value" : "V3.2.1: Introduced saref:StateOfInterest, parallel to saref:PropertyOfInterest.",
+        "type" : "label"
+      } ]
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "77"
+    "label" : {
+      "IRI-based" : "StateOfInterest",
+      "en" : "State of Interest"
+    },
+    "comment" : {
+      "en" : "Identifiable conditions that features of interest are or may be in, and that can be acted upon by devices, such as observed and controlled. An instance of saref:StateOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Rule",
-    "equivalent" : [ "46" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#StateOfInterest",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateOfInterest"
+    },
+    "comment" : {
+      "undefined" : "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended."
+    },
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Rule",
+    "equivalent" : [ "85" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Rule"
     },
     "attributes" : [ "equivalent" ],
-    "id" : "1"
+    "id" : "64"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Sensor",
-    "equivalent" : [ "78" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Sensor",
+    "equivalent" : [ "91" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Sensor"
     },
-    "subClasses" : [ "25", "33" ],
+    "subClasses" : [ "44", "49" ],
     "attributes" : [ "equivalent" ],
-    "id" : "4",
-    "superClasses" : [ "11", "12" ]
+    "id" : "10",
+    "superClasses" : [ "19", "32" ]
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#State",
-    "equivalent" : [ "77" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "State"
-    },
-    "comment" : {
-      "undefined" : "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended."
-    },
-    "attributes" : [ "equivalent" ],
-    "id" : "30"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#FeatureOfInterest",
-    "equivalent" : [ "75" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#FeatureOfInterest",
+    "equivalent" : [ "37" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
       "IRI-based" : "FeatureOfInterest"
     },
     "attributes" : [ "equivalent" ],
-    "id" : "82"
+    "id" : "95"
   }, {
-    "iri" : "https://saref.etsi.org/core/Actuator",
-    "baseIri" : "https://saref.etsi.org/core",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device",
+    "equivalent" : [ "34" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Actuator"
+      "IRI-based" : "Device",
+      "undefined" : "Device"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "14"
+    "subClasses" : [ "28", "10", "32", "30", "18" ],
+    "comment" : {
+      "undefined" : "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Application"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#app",
+      "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+      "labels" : {
+        "IRI-based" : "app"
+      }
+    } ],
+    "subClasses" : [ "15", "25" ],
+    "comment" : {
+      "undefined" : "An IoT application that compose IoT devices services to create added value/complex services, it can be a trigger-action plateform."
+    },
+    "id" : "16"
   }, {
     "iri" : "https://saref.etsi.org/core/SmokeSensor",
     "baseIri" : "https://saref.etsi.org/core",
@@ -585,98 +1981,74 @@
     "label" : {
       "IRI-based" : "SmokeSensor"
     },
-    "attributes" : [ "equivalent", "external" ],
-    "id" : "26"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Processor",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Processor"
-    },
-    "comment" : {
-      "undefined" : "A device that has the capability to perform computation operations on data."
-    },
-    "id" : "37",
-    "superClasses" : [ "12" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ComplexTrigger",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ComplexTrigger"
-    },
-    "id" : "51",
-    "superClasses" : [ "20" ]
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "72"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "2",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "3",
+    "id" : "5",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "6",
+    "id" : "7",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
-    "type" : "owl:objectProperty"
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "27",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "29",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "31",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "32",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "36",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "38",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "40",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "44",
+    "id" : "33",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "43",
+    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "54",
@@ -685,44 +2057,44 @@
     "id" : "55",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "59",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "63",
     "type" : "owl:objectProperty"
   }, {
     "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "70",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "72",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "73",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "74",
+    "id" : "75",
     "type" : "owl:objectProperty"
   }, {
     "id" : "76",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "71",
-    "type" : "owl:objectProperty"
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "80",
     "type" : "owl:objectProperty"
@@ -730,197 +2102,202 @@
     "id" : "81",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "83",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "84",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "85",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "86",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "87",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "88",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "89",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasAction",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "2",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsTo",
+    "equivalent" : [ "4" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "3",
     "label" : {
-      "IRI-based" : "hasAction"
+      "IRI-based" : "flowsTo"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "0"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#measuresProperty",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "measuresProperty"
-    },
-    "domain" : "4",
-    "attributes" : [ "object" ],
-    "id" : "3"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#consumes",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "consumes"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "A relationship between a device and a service."
-    },
-    "attributes" : [ "object" ],
-    "id" : "6"
+    "id" : "2"
   }, {
     "iri" : "https://saref.etsi.org/core/controlsProperty",
     "baseIri" : "https://saref.etsi.org/core",
-    "range" : "18",
+    "range" : "6",
     "label" : {
       "IRI-based" : "controlsProperty"
     },
-    "domain" : "18",
-    "attributes" : [ "object", "external" ],
-    "id" : "17"
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasTrigger",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "20",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "3",
     "label" : {
-      "IRI-based" : "hasTrigger"
+      "IRI-based" : "allowsAction"
     },
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "19"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#offers",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "offers"
-    },
-    "domain" : "12",
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasState",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "30",
-    "label" : {
-      "IRI-based" : "hasState"
-    },
-    "domain" : "12",
-    "attributes" : [ "object" ],
-    "id" : "29"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasConnectivityDependency",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "hasConnectivityDependency"
-    },
-    "domain" : "7",
+    "domain" : "8",
     "comment" : {
-      "undefined" : "Denotes connectivity dependency relationship between two devices."
+      "undefined" : "A relationship between a service and an action, a service call allow action execution."
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "7"
   }, {
-    "range" : "4",
-    "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "32"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasStateDependencyTo",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "7",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#observes",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "11",
     "label" : {
-      "IRI-based" : "hasStateDependencyTo"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "Denotes state dependency relationship between two devices."
-    },
-    "attributes" : [ "object" ],
-    "id" : "34"
-  }, {
-    "range" : "12",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "range" : "12",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "36"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#controlsProperty",
-    "equivalent" : [ "17" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "controlsProperty"
+      "IRI-based" : "observes"
     },
     "domain" : "10",
     "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "9"
   }, {
-    "range" : "4",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "39"
-  }, {
-    "range" : "12",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "40"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsFrom",
-    "equivalent" : [ "43" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "2",
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "6",
     "label" : {
-      "IRI-based" : "flowsFrom"
+      "IRI-based" : "topObjectProperty"
     },
-    "domain" : "16",
-    "attributes" : [ "object" ],
-    "id" : "42"
+    "domain" : "6",
+    "subproperty" : [ "13" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasIPAddress",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "45",
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasPropertyAffordance",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasPropertyAffordance"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "16",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "19",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "19",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "19",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "19",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasIPAddress",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasIPAddress"
     },
-    "domain" : "7",
+    "domain" : "34",
     "attributes" : [ "datatype" ],
-    "id" : "44"
+    "id" : "33"
   }, {
-    "range" : "12",
-    "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "47"
+    "iri" : "https://saref.etsi.org/core/hasStateOfInterest",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "38",
+    "annotations" : {
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "en",
+        "value" : "V3.2.1: Introduced saref:hasStateOfInterest and saref:isStateOfInterestOf, parallel to saref:hasPropertyOfInterest and saref:isPropertyOfInterestOf.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStateOfInterest",
+      "en" : "has state of interest"
+    },
+    "cardinality" : "1",
+    "domain" : "37",
+    "comment" : {
+      "en" : "Links a feature of interest to one of its states of interest."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
   }, {
-    "range" : "23",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "48"
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasApplicationAction",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasApplicationAction"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "range" : "10",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "46",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
   }, {
     "iri" : "http://www.data-knowledge.org/dk/flowsFrom",
     "baseIri" : "http://www.data-knowledge.org/dk",
-    "range" : "2",
+    "range" : "3",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -930,13 +2307,13 @@
       } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "de",
-        "value" : "Stammdatenspeicher sendet Datensatz 324",
+        "language" : "en",
+        "value" : "Master data repository sends out dataset 324",
         "type" : "label"
       }, {
         "identifier" : "example",
-        "language" : "en",
-        "value" : "Master data repository sends out dataset 324",
+        "language" : "de",
+        "value" : "Stammdatenspeicher sendet Datensatz 324",
         "type" : "label"
       } ]
     },
@@ -945,147 +2322,296 @@
       "IRI-based" : "flowsFrom",
       "en" : "flows from"
     },
-    "domain" : "15",
+    "domain" : "0",
     "comment" : {
       "de" : "Schnittstelle A sendet Daten",
       "en" : "Interface A sends data"
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "43"
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
   }, {
-    "range" : "12",
+    "range" : "10",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "32",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "49"
-  }, {
-    "range" : "20",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
-    "range" : "8",
-    "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "52"
+    "range" : "53",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
   }, {
-    "range" : "23",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "18",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
-    "range" : "56",
-    "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "32",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasServiceName",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "58",
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "42",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasServiceName",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "62",
     "label" : {
       "IRI-based" : "hasServiceName"
     },
-    "domain" : "8",
+    "domain" : "53",
     "attributes" : [ "datatype" ],
-    "id" : "57"
+    "id" : "61"
   }, {
-    "range" : "21",
-    "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "59"
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasTrigger"
+    },
+    "domain" : "64",
+    "attributes" : [ "object" ],
+    "id" : "63"
   }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsFrom",
+    "equivalent" : [ "47" ],
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "flowsFrom"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasManufacturerName",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasManufacturerName"
+    },
+    "domain" : "34",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://saref.etsi.org/core/hasPropertyOfInterest",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "60",
+    "annotations" : {
+      "historyNote" : [ {
+        "identifier" : "historyNote",
+        "language" : "en",
+        "value" : "V3.2.1: Introduced saref:hasPropertyOfInterest and saref:isPropertyOfInterestOf. Cannot use saref:hasProperty due to the combination of cardinality restrictions and sub-property chain axioms makes the ontology exist the OWL 2 DL prodile.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPropertyOfInterest",
+      "en" : "has property of interest"
+    },
+    "cardinality" : "1",
+    "domain" : "37",
+    "comment" : {
+      "en" : "Links a feature of interest to one of its properties of interest."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "hasState"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "offers"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasDeviceTypeName",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasDeviceTypeName"
+    },
+    "domain" : "34",
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasDeviceName",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasDeviceName"
+    },
+    "domain" : "34",
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#controls",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
     "range" : "11",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "60"
+    "label" : {
+      "IRI-based" : "controls"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "80"
   }, {
-    "range" : "11",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasEnvironmentDependencyTo",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasEnvironmentDependencyTo"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Denotes environment dependency relationship between two devices."
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasServiceDependencyTo",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "7",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasImplicitServiceDependencyTo",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasImplicitServiceDependencyTo"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Denotes implicit service dependency between two IoT devices."
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasServiceDependencyTo",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "34",
     "label" : {
       "IRI-based" : "hasServiceDependencyTo"
     },
-    "domain" : "7",
+    "domain" : "34",
     "comment" : {
       "undefined" : "Denotes direct service dependency relationship between two devices."
     },
     "attributes" : [ "object" ],
-    "id" : "63"
+    "id" : "83"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasDeviceName",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "66",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasStateDependencyTo",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "34",
     "label" : {
-      "IRI-based" : "hasDeviceName"
+      "IRI-based" : "hasStateDependencyTo"
     },
-    "domain" : "7",
-    "attributes" : [ "datatype" ],
-    "id" : "65"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsTo",
-    "equivalent" : [ "71" ],
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "flowsTo"
-    },
-    "domain" : "16",
-    "attributes" : [ "object" ],
-    "id" : "70"
-  }, {
-    "range" : "10",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
-  }, {
-    "range" : "15",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "73"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#allowsAction",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "allowsAction"
-    },
-    "domain" : "28",
+    "domain" : "34",
     "comment" : {
-      "undefined" : "A relationship between a service and an action, a service call allow action execution."
+      "undefined" : "Denotes state dependency relationship between two devices."
     },
     "attributes" : [ "object" ],
-    "id" : "74"
+    "id" : "84"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#relatedTo",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "77",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "71",
     "label" : {
       "IRI-based" : "relatedTo"
     },
-    "domain" : "20",
+    "domain" : "40",
     "comment" : {
       "undefined" : "A relationship between a trigger and state to experss that a trigger occurs at a defined state of the device."
     },
     "attributes" : [ "object" ],
-    "id" : "76"
+    "id" : "86"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasMacAddress",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "64",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasMacAddress",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "88",
     "label" : {
       "IRI-based" : "hasMacAddress"
     },
-    "domain" : "7",
+    "domain" : "34",
     "attributes" : [ "datatype" ],
-    "id" : "79"
+    "id" : "87"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasAction"
+    },
+    "domain" : "64",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasChildTrigger",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasChildTrigger"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://saref.etsi.org/core/consistsOf",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "consistsOf"
+    },
+    "domain" : "37",
+    "attributes" : [ "external", "allValues", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasRule",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "hasRule"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "93"
   }, {
     "iri" : "http://www.data-knowledge.org/dk/flowsTo",
     "baseIri" : "http://www.data-knowledge.org/dk",
-    "range" : "2",
+    "range" : "3",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1110,108 +2636,46 @@
       "IRI-based" : "flowsTo",
       "en" : "flows to"
     },
-    "domain" : "15",
+    "domain" : "0",
     "comment" : {
       "de" : "Daten werden zu Schnittstelle B gesendet",
       "en" : "Data is sent to Interface B"
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "71"
+    "attributes" : [ "external", "object" ],
+    "id" : "4"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasRule",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "46",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#consumesService",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "8",
     "label" : {
-      "IRI-based" : "hasRule"
+      "IRI-based" : "consumesService"
     },
-    "domain" : "23",
+    "domain" : "19",
     "attributes" : [ "object" ],
-    "id" : "80"
+    "id" : "94"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasProperty",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "5",
+    "iri" : "https://saref.etsi.org/core/actsUpon",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "6",
     "label" : {
-      "IRI-based" : "hasProperty"
+      "IRI-based" : "actsUpon"
     },
-    "domain" : "82",
-    "attributes" : [ "object" ],
-    "id" : "81"
+    "superproperty" : [ "12" ],
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
   }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasManufacturerName",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "67",
+    "iri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasConnectivityDependency",
+    "baseIri" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
+    "range" : "34",
     "label" : {
-      "IRI-based" : "hasManufacturerName"
+      "IRI-based" : "hasConnectivityDependency"
     },
-    "domain" : "7",
-    "attributes" : [ "datatype" ],
-    "id" : "83"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasApplicationAction",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "hasApplicationAction"
-    },
-    "domain" : "23",
-    "attributes" : [ "object" ],
-    "id" : "84"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasImplicitServiceDependencyTo",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "hasImplicitServiceDependencyTo"
-    },
-    "domain" : "12",
+    "domain" : "34",
     "comment" : {
-      "undefined" : "Denotes implicit service dependency between two IoT devices."
+      "undefined" : "Denotes connectivity dependency relationship between two devices."
     },
     "attributes" : [ "object" ],
-    "id" : "85"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
-    "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "68",
-    "label" : {
-      "IRI-based" : "topDataProperty"
-    },
-    "domain" : "18",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "86"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasChildTrigger",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "hasChildTrigger"
-    },
-    "domain" : "51",
-    "attributes" : [ "object" ],
-    "id" : "87"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasEnvironmentDependencyTo",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "hasEnvironmentDependencyTo"
-    },
-    "domain" : "7",
-    "comment" : {
-      "undefined" : "Denotes environment dependency relationship between two devices."
-    },
-    "attributes" : [ "object" ],
-    "id" : "88"
-  }, {
-    "iri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasDeviceTypeName",
-    "baseIri" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
-    "range" : "69",
-    "label" : {
-      "IRI-based" : "hasDeviceTypeName"
-    },
-    "domain" : "7",
-    "attributes" : [ "datatype" ],
-    "id" : "89"
+    "id" : "96"
   } ]
 }

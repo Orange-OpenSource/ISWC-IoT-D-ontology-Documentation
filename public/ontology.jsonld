@@ -1,11 +1,40 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/consistsOf"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasPropertyOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasStateOfInterest"
+  } ]
+}, {
   "@id" : "http://elite.polito.it/ontologies/eupont.owl#Action",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Rule"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Rule"
   } ]
 }, {
   "@id" : "http://elite.polito.it/ontologies/eupont.owl#Trigger",
@@ -64,10 +93,10 @@
     "@value" : "flows from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsFrom"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsFrom"
   } ]
 }, {
   "@id" : "http://www.data-knowledge.org/dk/flowsTo",
@@ -100,13 +129,13 @@
     "@value" : "flows to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsTo"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsTo"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "IoT-D reprensents IoT systems context data that allows inference of dependencies between IoT systems."
@@ -115,21 +144,23 @@
     "@value" : "IoT dependencies ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD"
+    "@value" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://elite.polito.it/ontologies/eupont.owl#"
   }, {
     "@id" : "https://saref.etsi.org/core/"
+  }, {
+    "@id" : "https://www.w3.org/2019/wot/td#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@value" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD/0.0.4"
+    "@value" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD/0.0.4"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.4"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An action to perform by calling a service of an IoT device."
@@ -138,48 +169,48 @@
     "@id" : "http://elite.polito.it/ontologies/eupont.owl#Action"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Actuator",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Actuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   }, {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#IoTDevice"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://saref.etsi.org/core/Actuator"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An IoT application that compose IoT devices services to create added value/complex services, it can be a trigger-action plateform."
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Broker",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Broker",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "broker that connect equipments."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ComplexTrigger",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ComplexTrigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ConnectivityDevice",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ConnectivityDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A device that connectes home devices to the internet like: gateway, wifiRepeater, hub."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ConnectivityService",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ConnectivityService",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A service offred by a connectivityDevice."
@@ -188,7 +219,7 @@
     "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#DataFlow",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#DataFlow",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Indicates the actual connection and data exchange between actions in one application."
@@ -200,7 +231,7 @@
     "@id" : "http://www.data-knowledge.org/dk/DataFlow"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."
@@ -212,93 +243,90 @@
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#FeatureOfInterest",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#FeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#IoTDevice",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A device that is connected to the internet to share data it can be ether a sensor/actuator/processor or compositition."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Processor",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Processor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A device that has the capability to perform computation operations on data."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Property",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#PropertyOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://saref.etsi.org/core/Property"
+    "@id" : "https://saref.etsi.org/core/PropertyOfInterest"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Rule",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Rule",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Sensor",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   }, {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#IoTDevice"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://saref.etsi.org/core/Sensor"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Service",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Smokesensor",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Smokesensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Sensor"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Sensor"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://saref.etsi.org/core/SmokeSensor"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#State",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#StateOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended."
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://saref.etsi.org/core/State"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Switch",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Switch",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Actuator"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Actuator"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Temperaturesensor",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Temperaturesensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Sensor"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Sensor"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://saref.etsi.org/core/TemperatureSensor"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An event to react to. It is launched when the state of an IoT device changes."
@@ -307,88 +335,576 @@
     "@id" : "http://elite.polito.it/ontologies/eupont.owl#Trigger"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#allowsAction",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a service and an action, a service call allow action execution."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Service"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#consumes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A relationship between a device and a service."
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#app",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasRule" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_03"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_1"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_10"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_11"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_12"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_2"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_4"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_5"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_6"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_7"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_8"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_9"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://saref.etsi.org/core/Device"
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_light1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bathroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bathroom"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_light2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bathroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bathroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_coldwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_hotwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_sink_coldwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_sink_hotwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_bottom_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_bottom_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_off"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_on"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#controlsProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Actuator"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Property"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://saref.etsi.org/core/controlsProperty"
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsFrom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#DataFlow"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action"
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_bed_pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#DataFlow"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action"
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_closet_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Rule"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action"
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasApplicationAction",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_drawer1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_drawer2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bedroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bedroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light3_bedroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light3_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light4_bedroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light4_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_bedroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_bedroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeDetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_bottom_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_bottom_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_middle_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_middle_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_window_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_open"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter3_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter4_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter5_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#consumesService",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#controls",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#PropertyOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_off"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_on"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_alarm"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_light1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_entrance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_switch_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#DataFlow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#DataFlow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasApplicationAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://elite.polito.it/ontologies/eupont.owl#Action"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasChildTrigger",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasChildTrigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ComplexTrigger"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ComplexTrigger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasConnectivityDependency",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasConnectivityDependency",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Denotes connectivity dependency relationship between two devices."
@@ -400,19 +916,19 @@
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasDeviceName",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasDeviceName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasDeviceTypeName",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasDeviceTypeName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasEnvironmentDependencyTo",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasEnvironmentDependencyTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Denotes environment dependency relationship between two devices."
@@ -424,25 +940,25 @@
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasIPAddress",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasIPAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasImplicitServiceDependencyTo",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasImplicitServiceDependencyTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Denotes implicit service dependency between two IoT devices."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasMacAddress",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasMacAddress",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core/Device"
@@ -451,31 +967,33 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasManufacturerName",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasManufacturerName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasProperty",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasPropertyAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#FeatureOfInterest"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application"
+  }, {
+    "@id" : "https://saref.etsi.org/core/Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Property"
+    "@id" : "https://www.w3.org/2019/wot/td#PropertyAffordance"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasRule",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasRule",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasServiceDependencyTo",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasServiceDependencyTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Denotes direct service dependency relationship between two devices."
@@ -487,22 +1005,22 @@
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasServiceName",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasServiceName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core/Service"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasState",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#State"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#StateOfInterest"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasStateDependencyTo",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasStateDependencyTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Denotes state dependency relationship between two devices."
@@ -514,55 +1032,1447 @@
     "@id" : "https://saref.etsi.org/core/Device"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasTrigger",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Rule"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Rule"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#measuresProperty",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cooktop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_fridge_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_hood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_light1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_kitchen"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_kitchen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_light2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_kitchen"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_kitchen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_oven",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_sink_coldwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_sink_hotwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeDetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_bottom_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_bottom_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_entrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_staircase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_toilet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_off"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_on"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_light1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_light2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_couch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_table",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter3_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter3_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter4_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter4_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter5_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter5_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeDetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_bottom_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_bottom_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch2_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch2_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_tv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_open"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_open"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_open"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_open"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#observes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Sensor"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Sensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Property"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#PropertyOfInterest"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#offers",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bathroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bathroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light3_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light4_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_staircase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_toilet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_walkway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Service"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Service"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#relatedTo",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_off"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_on"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_off",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_office"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_door",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_office"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_office"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter_office"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter_office"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_closed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_closed"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeDetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_middle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_tv",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window_open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_alarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bathroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bathroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bathroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bathroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_kitchen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light3_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light4_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightEntrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightStraicase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightToilet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightWalkway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bathroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bedroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_entrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightEntrance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightOffice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_staircase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightStraicase"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_toilet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightToilet"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_walkway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightWalkway"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter3_livingroom"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter3_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter3_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter4_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter5_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bathroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bedroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_entrance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_kitchen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_livingroom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_staircase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_walkway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_detected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a trigger and state to experss that a trigger occurs at a defined state of the device."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://saref.etsi.org/core/State"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#StateOfInterest"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#triggerActionPlateform",
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_03",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightEntrance"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_entrance"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bathroom"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bathroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_bedroom"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_window_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_office"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_alarm"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeDetected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeDetected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeDetected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeDetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_kitchen"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_kitchen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_livingroom"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_livingroom"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightOffice"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_office"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightStraicase"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_staircase"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightWalkway"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_walkway"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_livingroom"
+  } ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window_open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://elite.polito.it/ontologies/eupont.owl#Rule"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_staircase"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_staircase"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_switch_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_switch_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_coldwater_instantaneous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_toilet"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_toilet"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_switch_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_switch_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#triggerActionPlateform",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "a kind of IoT application that is composed of rules created by end user."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application"
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_walkway"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_walkway"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_detected"
+  }, {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_undetected"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_detected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_undetected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_bottom_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_bottom_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_bottom_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_bottom_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_top_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_top_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice"
   } ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#historyNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#note",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://saref.etsi.org/core/Actuator",
@@ -572,10 +2482,50 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://saref.etsi.org/core/FeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A feature of interest represents any real world entity from which a property or a state may be acted upon, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
 }, {
-  "@id" : "https://saref.etsi.org/core/Property",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://saref.etsi.org/core/PropertyOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifiable qualities of features of interest that can be acted upon by devices, such as observed or controlled. An instance of saref:PropertyOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property of Interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "The air temperature of the atmosphere sample at a certain location and altitude, the received signal strength indicator of an wireless IoT connection, the luminance of the ETSI ATHENA amphitheatre.\n\n<etsi_premises/athena#luminance> a saref:PropertyOfInterest ;\n    saref:isPropertyOfInterestOf <etsi_premises/athena> ;\n    saref:hasPropertyKind saref:Luminance ;\n    rdfs:comment \"The luminance of amphitheatre ATHENA\"@en .\n"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#historyNote" : [ {
+    "@language" : "en",
+    "@value" : "V3.2.1: Introduced saref:PropertyOfInterest to solved the ambiguity between generic vs specific properties."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "A property of interest is the property of (OP saref:isPropertyOfInterestOf) exactly one feature of interest."
+  }, {
+    "@language" : "en",
+    "@value" : "Per convention, the IRI of properties of interest should consist of the IRI of their feature of interest, suffixed with a fragment identifier #{P} where {P} refers to the name of the property."
+  }, {
+    "@language" : "en",
+    "@value" : "Properties of interest need not always be explicited. It depends on the use case. Typically, properties of interest are useful in applications, where the association between a feature of interest and a property (i.e., the property of interest) needs to be identified and related to other properties of interest."
+  } ]
 }, {
   "@id" : "https://saref.etsi.org/core/Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -586,12 +2536,91 @@
   "@id" : "https://saref.etsi.org/core/SmokeSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://saref.etsi.org/core/State",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://saref.etsi.org/core/StateOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifiable conditions that features of interest are or may be in, and that can be acted upon by devices, such as observed and controlled. An instance of saref:StateOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "State of Interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#historyNote" : [ {
+    "@language" : "en",
+    "@value" : "V3.2.1: Introduced saref:StateOfInterest, parallel to saref:PropertyOfInterest."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "A state of interest is the state of (OP saref:isStateOfInterestOf) exactly one feature of interest."
+  }, {
+    "@language" : "en",
+    "@value" : "Per convention, the IRI of states of interest should consist of the IRI of their feature of interest, suffixed with a fragment identifier #{S} where {S} refers to the name of the state."
+  }, {
+    "@language" : "en",
+    "@value" : "States of interest need not always be explicited. It depends on the use case. Typically, states of interest are useful in applications, where the association between a feature of interest and a state (i.e., the state of interest) needs to be identified and related to other states of interest."
+  } ]
 }, {
   "@id" : "https://saref.etsi.org/core/TemperatureSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "https://saref.etsi.org/core/actsUpon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/consistsOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "https://saref.etsi.org/core/controlsProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasPropertyOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a feature of interest to one of its properties of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has property of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/PropertyOfInterest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#historyNote" : [ {
+    "@language" : "en",
+    "@value" : "V3.2.1: Introduced saref:hasPropertyOfInterest and saref:isPropertyOfInterestOf. Cannot use saref:hasProperty due to the combination of cardinality restrictions and sub-property chain axioms makes the ontology exist the OWL 2 DL prodile."
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasStateOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links a feature of interest to one of its states of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has state of interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/StateOfInterest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#historyNote" : [ {
+    "@language" : "en",
+    "@value" : "V3.2.1: Introduced saref:hasStateOfInterest and saref:isStateOfInterestOf, parallel to saref:hasPropertyOfInterest and saref:isPropertyOfInterestOf."
+  } ]
+}, {
+  "@id" : "https://www.w3.org/2019/wot/td#PropertyAffordance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]

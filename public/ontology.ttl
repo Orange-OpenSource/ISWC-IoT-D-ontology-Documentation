@@ -1,19 +1,20 @@
-@prefix : <http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#> .
+@prefix : <http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#> .
+@base <http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#> .
 
-<http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD> rdf:type owl:Ontology ;
-                                                               owl:imports <http://elite.polito.it/ontologies/eupont.owl#> ,
-                                                                           <https://saref.etsi.org/core/> ;
-                                                               <http://purl.org/dc/terms/description> "IoT-D reprensents IoT systems context data that allows inference of dependencies between IoT systems." ;
-                                                               <http://purl.org/dc/terms/title> "IoT dependencies ontology" ;
-                                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD" ;
-                                                               owl:versionIRI "http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD/0.0.4" ;
-                                                               owl:versionInfo "0.0.4" .
+<http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD> rdf:type owl:Ontology ;
+                                                         owl:imports <http://elite.polito.it/ontologies/eupont.owl#> ,
+                                                                     <https://saref.etsi.org/core/> ,
+                                                                     <https://www.w3.org/2019/wot/td#> ;
+                                                         <http://purl.org/dc/terms/description> "IoT-D reprensents IoT systems context data that allows inference of dependencies between IoT systems." ;
+                                                         <http://purl.org/dc/terms/title> "IoT dependencies ontology" ;
+                                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD" ;
+                                                         owl:versionIRI "http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD/0.0.4" ;
+                                                         owl:versionInfo "0.0.4" .
 
 #################################################################
 #    Annotation properties
@@ -37,6 +38,18 @@
 
 ###  http://www.w3.org/2002/07/owl#versionIRI
 owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+<http://www.w3.org/2004/02/skos/core#historyNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -71,170 +84,196 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
                                                       "flows to"@en .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#allowsAction
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#allowsAction
 :allowsAction rdf:type owl:ObjectProperty ;
               rdfs:domain :Service ;
               rdfs:range :Action ;
               rdfs:comment "A relationship between a service and an action, a service call allow action execution." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#consumes
-:consumes rdf:type owl:ObjectProperty ;
-          rdfs:domain <https://saref.etsi.org/core/Device> ;
-          rdfs:range <https://saref.etsi.org/core/Service> ;
-          rdfs:comment "A relationship between a device and a service." .
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#consumesService
+:consumesService rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Device ;
+                 rdfs:range :Service .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#controlsProperty
-:controlsProperty rdf:type owl:ObjectProperty ;
-                  owl:equivalentProperty <https://saref.etsi.org/core/controlsProperty> ;
-                  rdfs:domain :Actuator ;
-                  rdfs:range :Property .
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#controls
+:controls rdf:type owl:ObjectProperty ;
+          rdfs:domain :Actuator ;
+          rdfs:range :PropertyOfInterest .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsFrom
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsFrom
 :flowsFrom rdf:type owl:ObjectProperty ;
            rdfs:domain :DataFlow ;
            rdfs:range :Action .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#flowsTo
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#flowsTo
 :flowsTo rdf:type owl:ObjectProperty ;
          rdfs:domain :DataFlow ;
          rdfs:range :Action .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasAction
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasAction
 :hasAction rdf:type owl:ObjectProperty ;
            rdfs:domain :Rule ;
            rdfs:range :Action .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasApplicationAction
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasApplicationAction
 :hasApplicationAction rdf:type owl:ObjectProperty ;
                       rdfs:domain :Application ;
                       rdfs:range <http://elite.polito.it/ontologies/eupont.owl#Action> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasChildTrigger
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasChildTrigger
 :hasChildTrigger rdf:type owl:ObjectProperty ;
                  rdfs:domain :ComplexTrigger ;
                  rdfs:range :Trigger .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasConnectivityDependency
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasConnectivityDependency
 :hasConnectivityDependency rdf:type owl:ObjectProperty ;
                            rdfs:domain <https://saref.etsi.org/core/Device> ;
                            rdfs:range <https://saref.etsi.org/core/Device> ;
                            rdfs:comment "Denotes connectivity dependency relationship between two devices." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasEnvironmentDependencyTo
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasEnvironmentDependencyTo
 :hasEnvironmentDependencyTo rdf:type owl:ObjectProperty ;
                             rdfs:domain <https://saref.etsi.org/core/Device> ;
                             rdfs:range <https://saref.etsi.org/core/Device> ;
                             rdfs:comment "Denotes environment dependency relationship between two devices." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasImplicitServiceDependencyTo
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasImplicitServiceDependencyTo
 :hasImplicitServiceDependencyTo rdf:type owl:ObjectProperty ;
                                 rdfs:domain :Device ;
                                 rdfs:range :Device ;
                                 rdfs:comment "Denotes implicit service dependency between two IoT devices." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasProperty
-:hasProperty rdf:type owl:ObjectProperty ;
-             rdfs:domain :FeatureOfInterest ;
-             rdfs:range :Property .
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasPropertyAffordance
+:hasPropertyAffordance rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Application ,
+                                   <https://saref.etsi.org/core/Device> ;
+                       rdfs:range <https://www.w3.org/2019/wot/td#PropertyAffordance> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasRule
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasRule
 :hasRule rdf:type owl:ObjectProperty ;
          rdfs:domain :Application ;
          rdfs:range <http://elite.polito.it/ontologies/eupont.owl#Rule> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasServiceDependencyTo
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasServiceDependencyTo
 :hasServiceDependencyTo rdf:type owl:ObjectProperty ;
                         rdfs:domain <https://saref.etsi.org/core/Device> ;
                         rdfs:range <https://saref.etsi.org/core/Device> ;
                         rdfs:comment "Denotes direct service dependency relationship between two devices." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasState
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasState
 :hasState rdf:type owl:ObjectProperty ;
           rdfs:domain :Device ;
-          rdfs:range :State .
+          rdfs:range :StateOfInterest .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasStateDependencyTo
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasStateDependencyTo
 :hasStateDependencyTo rdf:type owl:ObjectProperty ;
                       rdfs:domain <https://saref.etsi.org/core/Device> ;
                       rdfs:range <https://saref.etsi.org/core/Device> ;
                       rdfs:comment "Denotes state dependency relationship between two devices." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasTrigger
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasTrigger
 :hasTrigger rdf:type owl:ObjectProperty ;
             rdfs:domain :Rule ;
             rdfs:range :Trigger .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#measuresProperty
-:measuresProperty rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Sensor ;
-                  rdfs:range :Property .
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#observes
+:observes rdf:type owl:ObjectProperty ;
+          rdfs:domain :Sensor ;
+          rdfs:range :PropertyOfInterest .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#offers
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#offers
 :offers rdf:type owl:ObjectProperty ;
         rdfs:domain :Device ;
         rdfs:range :Service .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#relatedTo
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#relatedTo
 :relatedTo rdf:type owl:ObjectProperty ;
            rdfs:domain :Trigger ;
-           rdfs:range <https://saref.etsi.org/core/State> ;
+           rdfs:range :StateOfInterest ;
            rdfs:comment "A relationship between a trigger and state to experss that a trigger occurs at a defined state of the device." .
+
+
+###  https://saref.etsi.org/core/actsUpon
+<https://saref.etsi.org/core/actsUpon> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://saref.etsi.org/core/consistsOf
+<https://saref.etsi.org/core/consistsOf> rdf:type owl:ObjectProperty .
 
 
 ###  https://saref.etsi.org/core/controlsProperty
 <https://saref.etsi.org/core/controlsProperty> rdf:type owl:ObjectProperty .
 
 
+###  https://saref.etsi.org/core/hasPropertyOfInterest
+<https://saref.etsi.org/core/hasPropertyOfInterest> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <https://saref.etsi.org/core/FeatureOfInterest> ;
+                                                    rdfs:range <https://saref.etsi.org/core/PropertyOfInterest> ;
+                                                    rdfs:comment "Links a feature of interest to one of its properties of interest."@en ;
+                                                    rdfs:label "has property of interest"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#historyNote> "V3.2.1: Introduced saref:hasPropertyOfInterest and saref:isPropertyOfInterestOf. Cannot use saref:hasProperty due to the combination of cardinality restrictions and sub-property chain axioms makes the ontology exist the OWL 2 DL prodile."@en .
+
+
+###  https://saref.etsi.org/core/hasStateOfInterest
+<https://saref.etsi.org/core/hasStateOfInterest> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <https://saref.etsi.org/core/FeatureOfInterest> ;
+                                                 rdfs:range <https://saref.etsi.org/core/StateOfInterest> ;
+                                                 rdfs:comment "Links a feature of interest to one of its states of interest."@en ;
+                                                 rdfs:label "has state of interest"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#historyNote> "V3.2.1: Introduced saref:hasStateOfInterest and saref:isStateOfInterestOf, parallel to saref:hasPropertyOfInterest and saref:isPropertyOfInterestOf."@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasDeviceName
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasDeviceName
 :hasDeviceName rdf:type owl:DatatypeProperty ;
                rdfs:domain <https://saref.etsi.org/core/Device> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasDeviceTypeName
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasDeviceTypeName
 :hasDeviceTypeName rdf:type owl:DatatypeProperty ;
                    rdfs:domain <https://saref.etsi.org/core/Device> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasIPAddress
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasIPAddress
 :hasIPAddress rdf:type owl:DatatypeProperty ;
               rdfs:domain <https://saref.etsi.org/core/Device> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasMacAddress
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasMacAddress
 :hasMacAddress rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain <https://saref.etsi.org/core/Device> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasManufacturerName
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasManufacturerName
 :hasManufacturerName rdf:type owl:DatatypeProperty ;
                      rdfs:domain <https://saref.etsi.org/core/Device> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#hasServiceName
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#hasServiceName
 :hasServiceName rdf:type owl:DatatypeProperty ;
                 rdfs:domain <https://saref.etsi.org/core/Service> .
 
@@ -262,130 +301,129 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
                                             rdfs:label "Data Flow"@en .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Action
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Action
 :Action rdf:type owl:Class ;
         rdfs:subClassOf <http://elite.polito.it/ontologies/eupont.owl#Action> ;
         rdfs:comment "An action to perform by calling a service of an IoT device." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Actuator
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Actuator
 :Actuator rdf:type owl:Class ;
           owl:equivalentClass <https://saref.etsi.org/core/Actuator> ;
           rdfs:subClassOf :Device ,
                           :IoTDevice .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Application
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Application
 :Application rdf:type owl:Class ;
              rdfs:comment "An IoT application that compose IoT devices services to create added value/complex services, it can be a trigger-action plateform." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Broker
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Broker
 :Broker rdf:type owl:Class ;
         rdfs:subClassOf :Application ;
         rdfs:comment "broker that connect equipments." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ComplexTrigger
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ComplexTrigger
 :ComplexTrigger rdf:type owl:Class ;
                 rdfs:subClassOf :Trigger .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ConnectivityDevice
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ConnectivityDevice
 :ConnectivityDevice rdf:type owl:Class ;
                     rdfs:subClassOf :Device ;
                     rdfs:comment "A device that connectes home devices to the internet like: gateway, wifiRepeater, hub." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#ConnectivityService
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#ConnectivityService
 :ConnectivityService rdf:type owl:Class ;
                      rdfs:subClassOf <https://saref.etsi.org/core/Service> ;
                      rdfs:comment "A service offred by a connectivityDevice." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#DataFlow
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#DataFlow
 :DataFlow rdf:type owl:Class ;
           rdfs:subClassOf <http://www.data-knowledge.org/dk/DataFlow> ;
           rdfs:comment "Indicates the actual connection and data exchange between actions in one application." ;
           rdfs:label "Data Flow" .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Device
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Device
 :Device rdf:type owl:Class ;
         owl:equivalentClass <https://saref.etsi.org/core/Device> ;
         rdfs:comment "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function." ;
         rdfs:label "Device" .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#FeatureOfInterest
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#FeatureOfInterest
 :FeatureOfInterest rdf:type owl:Class ;
                    owl:equivalentClass <https://saref.etsi.org/core/FeatureOfInterest> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#IoTDevice
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#IoTDevice
 :IoTDevice rdf:type owl:Class ;
            rdfs:subClassOf :Device ;
            rdfs:comment "A device that is connected to the internet to share data it can be ether a sensor/actuator/processor or compositition." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Processor
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Processor
 :Processor rdf:type owl:Class ;
            rdfs:subClassOf :Device ;
            rdfs:comment "A device that has the capability to perform computation operations on data." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Property
-:Property rdf:type owl:Class ;
-          owl:equivalentClass <https://saref.etsi.org/core/Property> ;
-          rdfs:comment "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature" .
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#PropertyOfInterest
+:PropertyOfInterest rdf:type owl:Class ;
+                    owl:equivalentClass <https://saref.etsi.org/core/PropertyOfInterest> ;
+                    rdfs:comment "A quality of a feature of interest that can be measured; an aspect of a feature of interest that is intrinsic to and cannot exist without the feature" .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Rule
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Rule
 :Rule rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Sensor
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Sensor
 :Sensor rdf:type owl:Class ;
         owl:equivalentClass <https://saref.etsi.org/core/Sensor> ;
         rdfs:subClassOf :Device ,
                         :IoTDevice .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Service
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Service
 :Service rdf:type owl:Class ;
          owl:equivalentClass <https://saref.etsi.org/core/Service> .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Smokesensor
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Smokesensor
 :Smokesensor rdf:type owl:Class ;
              owl:equivalentClass <https://saref.etsi.org/core/SmokeSensor> ;
              rdfs:subClassOf :Sensor .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#State
-:State rdf:type owl:Class ;
-       owl:equivalentClass <https://saref.etsi.org/core/State> ;
-       rdfs:comment "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended." .
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#StateOfInterest
+:StateOfInterest rdf:type owl:Class ;
+                 rdfs:comment "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Switch
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Switch
 :Switch rdf:type owl:Class ;
         rdfs:subClassOf :Actuator .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Temperaturesensor
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Temperaturesensor
 :Temperaturesensor rdf:type owl:Class ;
                    owl:equivalentClass <https://saref.etsi.org/core/TemperatureSensor> ;
                    rdfs:subClassOf :Sensor .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#Trigger
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#Trigger
 :Trigger rdf:type owl:Class ;
          rdfs:subClassOf <http://elite.polito.it/ontologies/eupont.owl#Trigger> ;
          rdfs:comment "An event to react to. It is launched when the state of an IoT device changes." .
 
 
-###  http://www.semanticweb.org/OrangeLab/ontologies/2021/9/IoTD#triggerActionPlateform
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#triggerActionPlateform
 :triggerActionPlateform rdf:type owl:Class ;
                         rdfs:subClassOf :Application ;
                         rdfs:comment "a kind of IoT application that is composed of rules created by end user." .
@@ -400,11 +438,34 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
 
 
 ###  https://saref.etsi.org/core/FeatureOfInterest
-<https://saref.etsi.org/core/FeatureOfInterest> rdf:type owl:Class .
+<https://saref.etsi.org/core/FeatureOfInterest> rdf:type owl:Class ;
+                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <https://saref.etsi.org/core/consistsOf> ;
+                                                                  owl:allValuesFrom <https://saref.etsi.org/core/FeatureOfInterest>
+                                                                ] ;
+                                                rdfs:comment "A feature of interest represents any real world entity from which a property or a state may be acted upon, such as observed and controlled. An instance of saref:FeatureOfInterest represents one specific real world entity."@en ;
+                                                rdfs:label "Feature of interest"@en .
 
 
-###  https://saref.etsi.org/core/Property
-<https://saref.etsi.org/core/Property> rdf:type owl:Class .
+###  https://saref.etsi.org/core/PropertyOfInterest
+<https://saref.etsi.org/core/PropertyOfInterest> rdf:type owl:Class ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <https://saref.etsi.org/core/hasPropertyOfInterest> ;
+                                                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] ;
+                                                 rdfs:comment "Identifiable qualities of features of interest that can be acted upon by devices, such as observed or controlled. An instance of saref:PropertyOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."@en ;
+                                                 rdfs:label "Property of Interest"@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#example> """The air temperature of the atmosphere sample at a certain location and altitude, the received signal strength indicator of an wireless IoT connection, the luminance of the ETSI ATHENA amphitheatre.
+
+<etsi_premises/athena#luminance> a saref:PropertyOfInterest ;
+    saref:isPropertyOfInterestOf <etsi_premises/athena> ;
+    saref:hasPropertyKind saref:Luminance ;
+    rdfs:comment \"The luminance of amphitheatre ATHENA\"@en .
+"""@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#historyNote> "V3.2.1: Introduced saref:PropertyOfInterest to solved the ambiguity between generic vs specific properties."@en ;
+                                                 <http://www.w3.org/2004/02/skos/core#note> "A property of interest is the property of (OP saref:isPropertyOfInterestOf) exactly one feature of interest."@en ,
+                                                                                            "Per convention, the IRI of properties of interest should consist of the IRI of their feature of interest, suffixed with a fragment identifier #{P} where {P} refers to the name of the property."@en ,
+                                                                                            "Properties of interest need not always be explicited. It depends on the use case. Typically, properties of interest are useful in applications, where the association between a feature of interest and a property (i.e., the property of interest) needs to be identified and related to other properties of interest."@en .
 
 
 ###  https://saref.etsi.org/core/Sensor
@@ -419,12 +480,1461 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
 <https://saref.etsi.org/core/SmokeSensor> rdf:type owl:Class .
 
 
-###  https://saref.etsi.org/core/State
-<https://saref.etsi.org/core/State> rdf:type owl:Class .
+###  https://saref.etsi.org/core/StateOfInterest
+<https://saref.etsi.org/core/StateOfInterest> rdf:type owl:Class ;
+                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://saref.etsi.org/core/hasStateOfInterest> ;
+                                                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                              ] ;
+                                              rdfs:comment "Identifiable conditions that features of interest are or may be in, and that can be acted upon by devices, such as observed and controlled. An instance of saref:StateOfInterest is specific to a feature of interest. It is inherent to and cannot exist without that feature of interest."@en ;
+                                              rdfs:label "State of Interest"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#historyNote> "V3.2.1: Introduced saref:StateOfInterest, parallel to saref:PropertyOfInterest."@en ;
+                                              <http://www.w3.org/2004/02/skos/core#note> "A state of interest is the state of (OP saref:isStateOfInterestOf) exactly one feature of interest."@en ,
+                                                                                         "Per convention, the IRI of states of interest should consist of the IRI of their feature of interest, suffixed with a fragment identifier #{S} where {S} refers to the name of the state."@en ,
+                                                                                         "States of interest need not always be explicited. It depends on the use case. Typically, states of interest are useful in applications, where the association between a feature of interest and a state (i.e., the state of interest) needs to be identified and related to other states of interest."@en .
 
 
 ###  https://saref.etsi.org/core/TemperatureSensor
 <https://saref.etsi.org/core/TemperatureSensor> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2019/wot/td#PropertyAffordance
+<https://www.w3.org/2019/wot/td#PropertyAffordance> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#app
+:app rdf:type owl:NamedIndividual ,
+              :Application ;
+     :hasRule :rule_03 ,
+              :rule_1 ,
+              :rule_10 ,
+              :rule_11 ,
+              :rule_12 ,
+              :rule_2 ,
+              :rule_4 ,
+              :rule_5 ,
+              :rule_6 ,
+              :rule_7 ,
+              :rule_8 ,
+              :rule_9 .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_door
+:bathroom_door rdf:type owl:NamedIndividual ,
+                        :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_light1
+:bathroom_light1 rdf:type owl:NamedIndividual ,
+                          :IoTDevice ;
+                 :offers :off_light1_bathroom ,
+                         :on_light1_bathroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_light2
+:bathroom_light2 rdf:type owl:NamedIndividual ,
+                          :IoTDevice ;
+                 :offers :off_light2_bathroom ,
+                         :on_light2_bathroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence
+:bathroom_presence rdf:type owl:NamedIndividual ,
+                            :IoTDevice ;
+                   :hasState :bathroom_presence_detected ,
+                             :bathroom_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_detected
+:bathroom_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_presence_undetected
+:bathroom_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_coldwater_instantaneous
+:bathroom_shower_coldwater_instantaneous rdf:type owl:NamedIndividual ,
+                                                  :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_door
+:bathroom_shower_door rdf:type owl:NamedIndividual ,
+                               :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_shower_hotwater_instantaneous
+:bathroom_shower_hotwater_instantaneous rdf:type owl:NamedIndividual ,
+                                                 :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_sink_coldwater_instantaneous
+:bathroom_sink_coldwater_instantaneous rdf:type owl:NamedIndividual ,
+                                                :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_sink_hotwater_instantaneous
+:bathroom_sink_hotwater_instantaneous rdf:type owl:NamedIndividual ,
+                                               :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_bottom_left
+:bathroom_switch_bottom_left rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_bottom_right
+:bathroom_switch_bottom_right rdf:type owl:NamedIndividual ,
+                                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_top_left
+:bathroom_switch_top_left rdf:type owl:NamedIndividual ,
+                                   :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bathroom_switch_top_right
+:bathroom_switch_top_right rdf:type owl:NamedIndividual ,
+                                    :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC
+:bedroom_AC rdf:type owl:NamedIndividual ,
+                     :IoTDevice ;
+            :offers :bedroom_AC_off ,
+                    :bedroom_AC_on .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_off
+:bedroom_AC_off rdf:type owl:NamedIndividual ,
+                         <https://saref.etsi.org/core/Service> ;
+                :allowsAction :off_AC_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_AC_on
+:bedroom_AC_on rdf:type owl:NamedIndividual ,
+                        <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_bed_pressure
+:bedroom_bed_pressure rdf:type owl:NamedIndividual ,
+                               :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_closet_door
+:bedroom_closet_door rdf:type owl:NamedIndividual ,
+                              :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_door
+:bedroom_door rdf:type owl:NamedIndividual ,
+                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_drawer1
+:bedroom_drawer1 rdf:type owl:NamedIndividual ,
+                          :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_drawer2
+:bedroom_drawer2 rdf:type owl:NamedIndividual ,
+                          :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light1
+:bedroom_light1 rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :off_light1_bedroom ,
+                        :on_light1_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light2
+:bedroom_light2 rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :off_light2_bedroom ,
+                        :on_light2_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light3
+:bedroom_light3 rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :off_light3_bedroom ,
+                        :on_light3_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_light4
+:bedroom_light4 rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :off_light4_bedroom ,
+                        :on_light4_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence
+:bedroom_presence rdf:type owl:NamedIndividual ,
+                           :IoTDevice ;
+                  :hasState :bedroom_presence_detected ,
+                            :bedroom_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_detected
+:bedroom_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_presence_undetected
+:bedroom_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1
+:bedroom_shutter1 rdf:type owl:NamedIndividual ,
+                           :IoTDevice ;
+                  :offers :close_shutter1_bedroom ,
+                          :open_shutter1_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_closed
+:bedroom_shutter1_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_open
+:bedroom_shutter1_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter1_sensor
+:bedroom_shutter1_sensor rdf:type owl:NamedIndividual ,
+                                  :IoTDevice ;
+                         :hasState :bedroom_shutter1_closed ,
+                                   :bedroom_shutter1_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2
+:bedroom_shutter2 rdf:type owl:NamedIndividual ,
+                           :IoTDevice ;
+                  :offers :close_shutter2_bedroom ,
+                          :open_shutter2_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_closed
+:bedroom_shutter2_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_open
+:bedroom_shutter2_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_shutter2_sensor
+:bedroom_shutter2_sensor rdf:type owl:NamedIndividual ,
+                                  :IoTDevice ;
+                         :hasState :bedroom_shutter2_closed ,
+                                   :bedroom_shutter2_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeDetected
+:bedroom_smokeDetected rdf:type owl:NamedIndividual ,
+                                :Trigger ;
+                       :relatedTo :bedroom_smoke_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smokeSensor
+:bedroom_smokeSensor rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :hasState :bedroom_smoke_detected ,
+                               :bedroom_smoke_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_detected
+:bedroom_smoke_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_smoke_undetected
+:bedroom_smoke_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_bottom_left
+:bedroom_switch_bottom_left rdf:type owl:NamedIndividual ,
+                                     :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_bottom_right
+:bedroom_switch_bottom_right rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_middle_left
+:bedroom_switch_middle_left rdf:type owl:NamedIndividual ,
+                                     :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_middle_right
+:bedroom_switch_middle_right rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_top_left
+:bedroom_switch_top_left rdf:type owl:NamedIndividual ,
+                                  :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_switch_top_right
+:bedroom_switch_top_right rdf:type owl:NamedIndividual ,
+                                   :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#bedroom_window_open
+:bedroom_window_open rdf:type owl:NamedIndividual ,
+                              :Trigger ;
+                     :relatedTo :bedroom_shutter1_open ,
+                                :bedroom_shutter2_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_bedroom
+:close_shutter1_bedroom rdf:type owl:NamedIndividual ,
+                                 <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter1_livingroom
+:close_shutter1_livingroom rdf:type owl:NamedIndividual ,
+                                    <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_bedroom
+:close_shutter2_bedroom rdf:type owl:NamedIndividual ,
+                                 <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter2_livingroom
+:close_shutter2_livingroom rdf:type owl:NamedIndividual ,
+                                    <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter3_livingroom
+:close_shutter3_livingroom rdf:type owl:NamedIndividual ,
+                                    <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter4_livingroom
+:close_shutter4_livingroom rdf:type owl:NamedIndividual ,
+                                    <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter5_livingroom
+:close_shutter5_livingroom rdf:type owl:NamedIndividual ,
+                                    <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#close_shutter_office
+:close_shutter_office rdf:type owl:NamedIndividual ,
+                               <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance
+:entrance rdf:type owl:NamedIndividual ,
+                   <https://saref.etsi.org/core/FeatureOfInterest> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm
+:entrance_alarm rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :entrance_alarm_off ,
+                        :entrance_alarm_on .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_off
+:entrance_alarm_off rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_alarm_on
+:entrance_alarm_on rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_alarm .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_door
+:entrance_door rdf:type owl:NamedIndividual ,
+                        :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_light1
+:entrance_light1 rdf:type owl:NamedIndividual ,
+                          :IoTDevice ;
+                 :offers :on_light_entrance .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence
+:entrance_presence rdf:type owl:NamedIndividual ,
+                            :IoTDevice ;
+                   :hasState :entrance_presence_detected ,
+                             :entrance_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_detected
+:entrance_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_presence_undetected
+:entrance_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#entrance_switch_left
+:entrance_switch_left rdf:type owl:NamedIndividual ,
+                               :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen
+:kitchen rdf:type owl:NamedIndividual ,
+                  <https://saref.etsi.org/core/FeatureOfInterest> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cooktop
+:kitchen_cooktop rdf:type owl:NamedIndividual ,
+                          :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard1
+:kitchen_cupboard1 rdf:type owl:NamedIndividual ,
+                            :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard2
+:kitchen_cupboard2 rdf:type owl:NamedIndividual ,
+                            :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard3
+:kitchen_cupboard3 rdf:type owl:NamedIndividual ,
+                            :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard4
+:kitchen_cupboard4 rdf:type owl:NamedIndividual ,
+                            :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_cupboard5
+:kitchen_cupboard5 rdf:type owl:NamedIndividual ,
+                            :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_fridge_door
+:kitchen_fridge_door rdf:type owl:NamedIndividual ,
+                              :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_hood
+:kitchen_hood rdf:type owl:NamedIndividual ,
+                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_light1
+:kitchen_light1 rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :off_light2_kitchen ,
+                        :on_light1_kitchen .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_light2
+:kitchen_light2 rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :off_light2_kitchen ,
+                        :on_light2_kitchen .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_oven
+:kitchen_oven rdf:type owl:NamedIndividual ,
+                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence
+:kitchen_presence rdf:type owl:NamedIndividual ,
+                           :IoTDevice ;
+                  :hasState :kitchen_presence_detected ,
+                            :kitchen_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_detected
+:kitchen_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_presence_undetected
+:kitchen_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_sink_coldwater_instantaneous
+:kitchen_sink_coldwater_instantaneous rdf:type owl:NamedIndividual ,
+                                               :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_sink_hotwater_instantaneous
+:kitchen_sink_hotwater_instantaneous rdf:type owl:NamedIndividual ,
+                                              :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeDetected
+:kitchen_smokeDetected rdf:type owl:NamedIndividual ,
+                                :Trigger ;
+                       :relatedTo :kitchen_smoke_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smokeSensor
+:kitchen_smokeSensor rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :hasState :kitchen_smoke_detected ,
+                               :kitchen_smoke_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_detected
+:kitchen_smoke_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_smoke_undetected
+:kitchen_smoke_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_bottom_left
+:kitchen_switch_bottom_left rdf:type owl:NamedIndividual ,
+                                     :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_bottom_right
+:kitchen_switch_bottom_right rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_top_left
+:kitchen_switch_top_left rdf:type owl:NamedIndividual ,
+                                  :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#kitchen_switch_top_right
+:kitchen_switch_top_right rdf:type owl:NamedIndividual ,
+                                   :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_entrance
+:light_entrance rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_kitchen
+:light_kitchen rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_livingroom
+:light_livingroom rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_staircase
+:light_staircase rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#light_toilet
+:light_toilet rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom
+:livingroom rdf:type owl:NamedIndividual ,
+                     <https://saref.etsi.org/core/FeatureOfInterest> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC
+:livingroom_AC rdf:type owl:NamedIndividual ,
+                        :IoTDevice ;
+               :offers :livingroom_AC_off ,
+                       :livingroom_AC_on .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_off
+:livingroom_AC_off rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :off_AC_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_AC_on
+:livingroom_AC_on rdf:type owl:NamedIndividual ,
+                           <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_light1
+:livingroom_light1 rdf:type owl:NamedIndividual ,
+                            :IoTDevice ;
+                   :offers :off_light1_livingroom ,
+                           :on_light1_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_light2
+:livingroom_light2 rdf:type owl:NamedIndividual ,
+                            :IoTDevice ;
+                   :offers :off_light2_livingroom ,
+                           :on_light2_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence
+:livingroom_presence rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :hasState :livingroom_presence_detected ,
+                               :livingroom_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_couch
+:livingroom_presence_couch rdf:type owl:NamedIndividual ,
+                                    :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_detected
+:livingroom_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_table
+:livingroom_presence_table rdf:type owl:NamedIndividual ,
+                                    :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_presence_undetected
+:livingroom_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1
+:livingroom_shutter1 rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :offers :close_shutter1_livingroom ,
+                             :open_shutter1_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_closed
+:livingroom_shutter1_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_open
+:livingroom_shutter1_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter1_sensor
+:livingroom_shutter1_sensor rdf:type owl:NamedIndividual ,
+                                     :IoTDevice ;
+                            :hasState :livingroom_shutter1_closed ,
+                                      :livingroom_shutter1_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2
+:livingroom_shutter2 rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :offers :close_shutter2_livingroom ,
+                             :open_shutter2_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_closed
+:livingroom_shutter2_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_open
+:livingroom_shutter2_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter2_sensor
+:livingroom_shutter2_sensor rdf:type owl:NamedIndividual ,
+                                     :IoTDevice ;
+                            :hasState :livingroom_shutter2_closed ,
+                                      :livingroom_shutter2_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3
+:livingroom_shutter3 rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :offers :close_shutter3_livingroom ,
+                             :open_shutter3_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_closed
+:livingroom_shutter3_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_open
+:livingroom_shutter3_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter3_sensor
+:livingroom_shutter3_sensor rdf:type owl:NamedIndividual ,
+                                     :IoTDevice ;
+                            :hasState :livingroom_shutter3_closed ,
+                                      :livingroom_shutter3_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4
+:livingroom_shutter4 rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :offers :close_shutter4_livingroom ,
+                             :open_shutter4_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_closed
+:livingroom_shutter4_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_open
+:livingroom_shutter4_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter4_sensor
+:livingroom_shutter4_sensor rdf:type owl:NamedIndividual ,
+                                     :IoTDevice ;
+                            :hasState :livingroom_shutter4_closed ,
+                                      :livingroom_shutter4_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5
+:livingroom_shutter5 rdf:type owl:NamedIndividual ,
+                              :IoTDevice ;
+                     :offers :close_shutter5_livingroom ,
+                             :open_shutter5_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_closed
+:livingroom_shutter5_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_open
+:livingroom_shutter5_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_shutter5_sensor
+:livingroom_shutter5_sensor rdf:type owl:NamedIndividual ,
+                                     :IoTDevice ;
+                            :hasState :livingroom_shutter5_closed ,
+                                      :livingroom_shutter5_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeDetected
+:livingroom_smokeDetected rdf:type owl:NamedIndividual ,
+                                   :Trigger ;
+                          :relatedTo :livingroom_smoke_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smokeSensor
+:livingroom_smokeSensor rdf:type owl:NamedIndividual ,
+                                 :IoTDevice ;
+                        :hasState :livingroom_smoke_detected ,
+                                  :livingroom_smoke_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_detected
+:livingroom_smoke_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_smoke_undetected
+:livingroom_smoke_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_bottom_left
+:livingroom_switch1_bottom_left rdf:type owl:NamedIndividual ,
+                                         :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_bottom_right
+:livingroom_switch1_bottom_right rdf:type owl:NamedIndividual ,
+                                          :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_top_left
+:livingroom_switch1_top_left rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch1_top_right
+:livingroom_switch1_top_right rdf:type owl:NamedIndividual ,
+                                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch2_top_left
+:livingroom_switch2_top_left rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_switch2_top_right
+:livingroom_switch2_top_right rdf:type owl:NamedIndividual ,
+                                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_tv
+:livingroom_tv rdf:type owl:NamedIndividual ,
+                        :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window1
+:livingroom_window1 rdf:type owl:NamedIndividual ,
+                             :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#livingroom_window_open
+:livingroom_window_open rdf:type owl:NamedIndividual ,
+                                 :Trigger ;
+                        :relatedTo :livingroom_shutter1_open ,
+                                   :livingroom_shutter2_open ,
+                                   :livingroom_shutter3_open ,
+                                   :livingroom_shutter4_open ,
+                                   :livingroom_shutter5_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_bedroom
+:off_AC_bedroom rdf:type owl:NamedIndividual ,
+                         :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_livingroom
+:off_AC_livingroom rdf:type owl:NamedIndividual ,
+                            :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_AC_office
+:off_AC_office rdf:type owl:NamedIndividual ,
+                        :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bathroom
+:off_light1_bathroom rdf:type owl:NamedIndividual ,
+                              <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_bedroom
+:off_light1_bedroom rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_kitchen
+:off_light1_kitchen rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light1_livingroom
+:off_light1_livingroom rdf:type owl:NamedIndividual ,
+                                <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bathroom
+:off_light2_bathroom rdf:type owl:NamedIndividual ,
+                              <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_bedroom
+:off_light2_bedroom rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_kitchen
+:off_light2_kitchen rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light2_livingroom
+:off_light2_livingroom rdf:type owl:NamedIndividual ,
+                                <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light3_bedroom
+:off_light3_bedroom rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light4_bedroom
+:off_light4_bedroom rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_office
+:off_light_office rdf:type owl:NamedIndividual ,
+                           <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_staircase
+:off_light_staircase rdf:type owl:NamedIndividual ,
+                              <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_toilet
+:off_light_toilet rdf:type owl:NamedIndividual ,
+                           <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#off_light_walkway
+:off_light_walkway rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC
+:office_AC rdf:type owl:NamedIndividual ,
+                    :IoTDevice ;
+           :offers :office_AC_off ,
+                   :office_AC_on .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_off
+:office_AC_off rdf:type owl:NamedIndividual ,
+                        <https://saref.etsi.org/core/Service> ;
+               :allowsAction :off_AC_office .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_AC_on
+:office_AC_on rdf:type owl:NamedIndividual ,
+                       <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_door
+:office_door rdf:type owl:NamedIndividual ,
+                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_light
+:office_light rdf:type owl:NamedIndividual ,
+                       :IoTDevice ;
+              :offers :off_light_office ,
+                      :on_light_office .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence
+:office_presence rdf:type owl:NamedIndividual ,
+                          :IoTDevice ;
+                 :hasState :office_presence_detected ,
+                           :office_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_detected
+:office_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_presence_undetected
+:office_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter
+:office_shutter rdf:type owl:NamedIndividual ,
+                         :IoTDevice ;
+                :offers :close_shutter_office ,
+                        :open_shutter_office .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_closed
+:office_shutter_closed rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_open
+:office_shutter_open rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_shutter_sensor
+:office_shutter_sensor rdf:type owl:NamedIndividual ,
+                                :IoTDevice ;
+                       :hasState :office_shutter_closed ,
+                                 :office_shutter_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeDetected
+:office_smokeDetected rdf:type owl:NamedIndividual ,
+                               :Trigger ;
+                      :relatedTo :office_smoke_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smokeSensor
+:office_smokeSensor rdf:type owl:NamedIndividual ,
+                             :IoTDevice ;
+                    :hasState :office_smoke_detected ,
+                              :office_smoke_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_detected
+:office_smoke_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_smoke_undetected
+:office_smoke_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_left
+:office_switch_left rdf:type owl:NamedIndividual ,
+                             :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_middle
+:office_switch_middle rdf:type owl:NamedIndividual ,
+                               :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_switch_right
+:office_switch_right rdf:type owl:NamedIndividual ,
+                              :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_tv
+:office_tv rdf:type owl:NamedIndividual ,
+                    :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window
+:office_window rdf:type owl:NamedIndividual ,
+                        :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#office_window_open
+:office_window_open rdf:type owl:NamedIndividual ,
+                             :Trigger ;
+                    :relatedTo :office_shutter_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_alarm
+:on_alarm rdf:type owl:NamedIndividual ,
+                   :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bathroom
+:on_light1_bathroom rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> ;
+                    :allowsAction :on_light_bathroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_bedroom
+:on_light1_bedroom rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_light_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_kitchen
+:on_light1_kitchen rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light1_livingroom
+:on_light1_livingroom rdf:type owl:NamedIndividual ,
+                               <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bathroom
+:on_light2_bathroom rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> ;
+                    :allowsAction :on_light_bathroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_bedroom
+:on_light2_bedroom rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_light_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_kitchen
+:on_light2_kitchen rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_light_kitchen .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light2_livingroom
+:on_light2_livingroom rdf:type owl:NamedIndividual ,
+                               <https://saref.etsi.org/core/Service> ;
+                      :allowsAction :on_light_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light3_bedroom
+:on_light3_bedroom rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_light_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light4_bedroom
+:on_light4_bedroom rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_light_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightEntrance
+:on_lightEntrance rdf:type owl:NamedIndividual ,
+                           :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightOffice
+:on_lightOffice rdf:type owl:NamedIndividual ,
+                         :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightStraicase
+:on_lightStraicase rdf:type owl:NamedIndividual ,
+                            :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightToilet
+:on_lightToilet rdf:type owl:NamedIndividual ,
+                         :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_lightWalkway
+:on_lightWalkway rdf:type owl:NamedIndividual ,
+                          :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bathroom
+:on_light_bathroom rdf:type owl:NamedIndividual ,
+                            :Action ;
+                   :hasAction :on_light_bedroom ;
+                   :hasTrigger :presence_bedroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_bedroom
+:on_light_bedroom rdf:type owl:NamedIndividual ,
+                           :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_entrance
+:on_light_entrance rdf:type owl:NamedIndividual ,
+                            <https://saref.etsi.org/core/Service> ;
+                   :allowsAction :on_lightEntrance .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_kitchen
+:on_light_kitchen rdf:type owl:NamedIndividual ,
+                           :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_livingroom
+:on_light_livingroom rdf:type owl:NamedIndividual ,
+                              :Action .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_office
+:on_light_office rdf:type owl:NamedIndividual ,
+                          <https://saref.etsi.org/core/Service> ;
+                 :allowsAction :on_lightOffice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_staircase
+:on_light_staircase rdf:type owl:NamedIndividual ,
+                             <https://saref.etsi.org/core/Service> ;
+                    :allowsAction :on_lightStraicase .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_toilet
+:on_light_toilet rdf:type owl:NamedIndividual ,
+                          <https://saref.etsi.org/core/Service> ;
+                 :allowsAction :on_lightToilet .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#on_light_walkway
+:on_light_walkway rdf:type owl:NamedIndividual ,
+                           <https://saref.etsi.org/core/Service> ;
+                  :allowsAction :on_lightWalkway .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_bedroom
+:open_shutter1_bedroom rdf:type owl:NamedIndividual ,
+                                <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter1_livingroom
+:open_shutter1_livingroom rdf:type owl:NamedIndividual ,
+                                   <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_bedroom
+:open_shutter2_bedroom rdf:type owl:NamedIndividual ,
+                                <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter2_livingroom
+:open_shutter2_livingroom rdf:type owl:NamedIndividual ,
+                                   <https://saref.etsi.org/core/Service> ;
+                          :offers :close_shutter3_livingroom ,
+                                  :open_shutter3_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter3_livingroom
+:open_shutter3_livingroom rdf:type owl:NamedIndividual ,
+                                   <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter4_livingroom
+:open_shutter4_livingroom rdf:type owl:NamedIndividual ,
+                                   <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter5_livingroom
+:open_shutter5_livingroom rdf:type owl:NamedIndividual ,
+                                   <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#open_shutter_office
+:open_shutter_office rdf:type owl:NamedIndividual ,
+                              <https://saref.etsi.org/core/Service> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bathroom
+:presence_bathroom rdf:type owl:NamedIndividual ,
+                            :Trigger ;
+                   :relatedTo :bathroom_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_bedroom
+:presence_bedroom rdf:type owl:NamedIndividual ,
+                           :Trigger ;
+                  :relatedTo :bedroom_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_entrance
+:presence_entrance rdf:type owl:NamedIndividual ,
+                            :Trigger ;
+                   :relatedTo :entrance_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_kitchen
+:presence_kitchen rdf:type owl:NamedIndividual ,
+                           :Trigger ;
+                  :relatedTo :kitchen_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_livingroom
+:presence_livingroom rdf:type owl:NamedIndividual ,
+                              :Trigger ;
+                     :relatedTo :livingroom_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_office
+:presence_office rdf:type owl:NamedIndividual ,
+                          :Trigger ;
+                 :relatedTo :office_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_staircase
+:presence_staircase rdf:type owl:NamedIndividual ,
+                             :Trigger ;
+                    :relatedTo :staircase_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#presence_walkway
+:presence_walkway rdf:type owl:NamedIndividual ,
+                           :Trigger ;
+                  :relatedTo :walkway_presence_detected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_03
+:rule_03 rdf:type owl:NamedIndividual ,
+                  <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+         :hasAction :on_lightEntrance ;
+         :hasTrigger :presence_entrance .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_1
+:rule_1 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :on_light_bathroom ;
+        :hasTrigger :presence_bathroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_10
+:rule_10 rdf:type owl:NamedIndividual ,
+                  <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+         :hasAction :off_AC_bedroom ;
+         :hasTrigger :bedroom_window_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_11
+:rule_11 rdf:type owl:NamedIndividual ,
+                  <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+         :hasAction :off_AC_office ;
+         :hasTrigger :office_window_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_12
+:rule_12 rdf:type owl:NamedIndividual ,
+                  <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+         :hasAction :on_alarm ;
+         :hasTrigger :bedroom_smokeDetected ,
+                     :kitchen_smokeDetected ,
+                     :livingroom_smokeDetected ,
+                     :office_smokeDetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_2
+:rule_2 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_4
+:rule_4 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :on_light_kitchen ;
+        :hasTrigger :presence_kitchen .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_5
+:rule_5 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :on_light_livingroom ;
+        :hasTrigger :presence_livingroom .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_6
+:rule_6 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :on_lightOffice ;
+        :hasTrigger :presence_office .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_7
+:rule_7 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :on_lightStraicase ;
+        :hasTrigger :presence_staircase .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_8
+:rule_8 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :on_lightWalkway ;
+        :hasTrigger :presence_walkway .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#rule_9
+:rule_9 rdf:type owl:NamedIndividual ,
+                 <http://elite.polito.it/ontologies/eupont.owl#Rule> ;
+        :hasAction :off_AC_livingroom ;
+        :hasTrigger :livingroom_window_open .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase
+:staircase rdf:type owl:NamedIndividual ,
+                    <https://saref.etsi.org/core/FeatureOfInterest> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_light
+:staircase_light rdf:type owl:NamedIndividual ,
+                          :IoTDevice ;
+                 :offers :off_light_staircase ,
+                         :on_light_staircase .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence
+:staircase_presence rdf:type owl:NamedIndividual ,
+                             :IoTDevice ;
+                    :hasState :staircase_presence_detected ,
+                              :staircase_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_detected
+:staircase_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_presence_undetected
+:staircase_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_switch_left
+:staircase_switch_left rdf:type owl:NamedIndividual ,
+                                :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#staircase_switch_right
+:staircase_switch_right rdf:type owl:NamedIndividual ,
+                                 :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet
+:toilet rdf:type owl:NamedIndividual ,
+                 <https://saref.etsi.org/core/FeatureOfInterest> .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_coldwater_instantaneous
+:toilet_coldwater_instantaneous rdf:type owl:NamedIndividual ,
+                                         :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_light
+:toilet_light rdf:type owl:NamedIndividual ,
+                       :IoTDevice ;
+              :offers :off_light_toilet ,
+                      :on_light_toilet .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence
+:toilet_presence rdf:type owl:NamedIndividual ,
+                          :IoTDevice ;
+                 :hasState :toilet_presence_detected ,
+                           :toilet_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence_detected
+:toilet_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_presence_undetected
+:toilet_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_switch_left
+:toilet_switch_left rdf:type owl:NamedIndividual ,
+                             :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#toilet_switch_right
+:toilet_switch_right rdf:type owl:NamedIndividual ,
+                              :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_light
+:walkway_light rdf:type owl:NamedIndividual ,
+                        :IoTDevice ;
+               :offers :off_light_walkway ,
+                       :on_light_walkway .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence
+:walkway_presence rdf:type owl:NamedIndividual ,
+                           :IoTDevice ;
+                  :hasState :walkway_presence_detected ,
+                            :walkway_presence_undetected .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_detected
+:walkway_presence_detected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_presence_undetected
+:walkway_presence_undetected rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_bottom_left
+:walkway_switch1_bottom_left rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_bottom_right
+:walkway_switch1_bottom_right rdf:type owl:NamedIndividual ,
+                                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_top_left
+:walkway_switch1_top_left rdf:type owl:NamedIndividual ,
+                                   :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch1_top_right
+:walkway_switch1_top_right rdf:type owl:NamedIndividual ,
+                                    :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_bottom_left
+:walkway_switch2_bottom_left rdf:type owl:NamedIndividual ,
+                                      :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_bottom_right
+:walkway_switch2_bottom_right rdf:type owl:NamedIndividual ,
+                                       :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_top_left
+:walkway_switch2_top_left rdf:type owl:NamedIndividual ,
+                                   :IoTDevice .
+
+
+###  http://www.semanticweb.org/Lab/ontologies/2021/9/IoTD#walkway_switch2_top_right
+:walkway_switch2_top_right rdf:type owl:NamedIndividual ,
+                                    :IoTDevice .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
